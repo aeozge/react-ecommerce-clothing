@@ -74,12 +74,14 @@ export const getCategoriesAndDocuments = async() => {
   const q = query(collectionRef);
 
   const quesySnapshot = await getDocs(q);
-  const categoryMap = quesySnapshot.docs.reduce((acc, docSnapshot) => {
-    const {title, items} = docSnapshot.data();
-    acc[title.toLowerCase()] = items;
-    return acc;
-  }, {})
-  return categoryMap;
+  return quesySnapshot.docs.map(docSnapshot => docSnapshot.data())
+  
+  // reduce((acc, docSnapshot) => {
+  //   const {title, items} = docSnapshot.data();
+  //   acc[title.toLowerCase()] = items;
+  //   return acc;
+  // }, {})
+  // return categoryMap;
 }
 
 // Async func that recieves some user authentication object
