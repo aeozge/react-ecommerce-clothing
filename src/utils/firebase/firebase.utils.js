@@ -72,7 +72,7 @@ export const addCollectionAndDocuments = async (
 
 
 
-export const getCategoriesAndDocuments = async() => {
+const getCategoriesAndDocuments = async() => {
   const collectionRef = collection(db, 'categories')
   const q = query(collectionRef);
 
@@ -86,6 +86,7 @@ export const getCategoriesAndDocuments = async() => {
   // }, {})
   // return categoryMap;
 }
+export default getCategoriesAndDocuments;
 
 // Async func that recieves some user authentication object
 export const createUserDocumentFromAuth = async (
