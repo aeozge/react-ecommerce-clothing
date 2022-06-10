@@ -30,7 +30,7 @@ export const ProductCartContainer = styled.div`
     }
   }
   @media screen and (max-width:800px) {
-    width: 20vw;
+    width: 40vw;
     button {
       display: block;
       opacity: 0.9;

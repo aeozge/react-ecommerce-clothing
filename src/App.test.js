@@ -1,8 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+test("silly test to be Fail", () => {
+  expect("hello").toBe("hi");
+});
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("silly test to be Success", () => {
+  expect("hello").toBe("hello");
 });
