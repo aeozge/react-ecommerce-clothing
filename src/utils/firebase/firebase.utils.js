@@ -48,7 +48,7 @@ googleProvider.setCustomParameters({
 export const auth = getAuth();
 export const signInWithGooglePopup = () =>
   signInWithPopup(auth, googleProvider);
-  export const signInWithGoogleRedirect = () =>
+export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 
 // Create the database
@@ -70,22 +70,13 @@ export const addCollectionAndDocuments = async (
   console.log("done");
 };
 
-
-
-const getCategoriesAndDocuments = async() => {
-  const collectionRef = collection(db, 'categories')
+const getCategoriesAndDocuments = async () => {
+  const collectionRef = collection(db, "categories");
   const q = query(collectionRef);
 
   const quesySnapshot = await getDocs(q);
-  return quesySnapshot.docs.map(docSnapshot => docSnapshot.data())
-  
-  // reduce((acc, docSnapshot) => {
-  //   const {title, items} = docSnapshot.data();
-  //   acc[title.toLowerCase()] = items;
-  //   return acc;
-  // }, {})
-  // return categoryMap;
-}
+  return quesySnapshot.docs.map((docSnapshot) => docSnapshot.data());
+};
 export default getCategoriesAndDocuments;
 
 // Async func that recieves some user authentication object
