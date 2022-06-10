@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "dotenv": "^16.0.1",
     "firebase": "^9.8.2",
+    "fsevents": "^1.2.11",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
@@ -23,19 +24,7 @@
     "serverless-http": "^3.0.1",
     "stripe": "^9.6.0",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4",
-    "workbox-background-sync": "^6.5.3",
-    "workbox-broadcast-update": "^6.5.3",
-    "workbox-cacheable-response": "^6.5.3",
-    "workbox-core": "^6.5.3",
-    "workbox-expiration": "^6.5.3",
-    "workbox-google-analytics": "^6.5.3",
-    "workbox-navigation-preload": "^6.5.3",
-    "workbox-precaching": "^6.5.3",
-    "workbox-range-requests": "^6.5.3",
-    "workbox-routing": "^6.5.3",
-    "workbox-strategies": "^6.5.3",
-    "workbox-streams": "^6.5.3"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
