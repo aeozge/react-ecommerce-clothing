@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkout test 1`] = `
+<CheckOutItem
+  cartItem={
+    Object {
+      "imageUrl": "www.testImage.com",
+      "name": "women",
+      "price": 15,
+      "quantity": 3,
+    }
+  }
+/>
+`;
